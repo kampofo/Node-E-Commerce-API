@@ -5,9 +5,10 @@
       "moduleResolution": "nodenext",
       "sourceMap": true,
       "forceConsistentCasingInFileNames": true,
+      "noEmitOnError": true,     // Don't emit JS files if there's an error
       "rootDir": "./src",
       "outDir": "./dist",
     },
   "include": ["src/**/*"],         
-  "exclude": ["node_modules"]     
+  "exclude": ["node_modules", "dist"]     
 }
