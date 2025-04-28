@@ -1,0 +1,7 @@
+{
+    "explorer.compactFolders": false,
+    "javascript.format.semicolons": "insert",
+    "editor.formatOnSave": true,
+    "typescript.format.semicolons": "insert",
+    "prettier.semi": true
+}

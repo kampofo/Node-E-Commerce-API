@@ -1,0 +1,35 @@
+{
+  "name": "node-e-commerce-api",
+  "version": "1.0.0",
+  "description": "An E-Commerce API written in node.js",
+  "main": "server.js",
+  "scripts": {
+    "build": "rimraf dist && npx tsc",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "predev": "npm run build",
+    "dev": "nodemon src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kampofo/Node-E-Commerce-API.git"
+  },
+  "author": "Kwabena Ampofo & Cooper Breen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kampofo/Node-E-Commerce-API/issues"
+  },
+  "homepage": "https://github.com/kampofo/Node-E-Commerce-API#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.2",
+    "nodemon": "^3.1.10",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
