@@ -1,5 +1,7 @@
 import express, { Express } from "express";
+import 'dotenv/config';
 
+// route imports
 import adminRoutes from './routes/admin.routes';
 
 const app: Express = express();
@@ -16,5 +18,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-	console.log(`Server Listening on PORT: ${PORT}`);
+	console.log(`Server! Listening on PORT: ${PORT}`);
 });

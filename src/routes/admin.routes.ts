@@ -1,6 +1,7 @@
-import express, { Request, Response } from 'express';
+import express, { Router, Request, Response } from 'express';
 
-const router = express.Router();
+const router: Router = express.Router();
+
 
 router.post('/products', (req: Request, res: Response) => {
     // TODO: ADD LOGIC FOR ROUTE
